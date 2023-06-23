@@ -1,4 +1,4 @@
-import { loginFirebase } from '@/services/login';
+import { loginFirebase } from '@/services/loginWithFirebase';
 import { NextApiRequest, NextApiResponse } from 'next';
 import NextAuth, { NextAuthOptions } from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
@@ -10,8 +10,8 @@ export default async function hanlder(
 ) {
   return await NextAuth(req, res, {
     pages: {
-      signIn: '/admin/question',
-      error: '/login',
+      signIn: '/admin/projects',
+      error: '/admin/login',
       signOut: '/'
     },
     providers: [
