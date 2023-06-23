@@ -1,17 +1,41 @@
-import { IconMessageCircleQuestion } from '@tabler/icons-react';
+export const Navigation = [
+  {
+      name: 'Home',
+      href: '/',
+  },
+  {
+      name: 'Projects',
+      href: '/projects',
+  },
+  // {
+  //     name: 'My tools',
+  //     href: '/tools',
+  // },
+  {
+      name: 'Blog',
+      href: '/blog',
+  },
+]
 
-
-export const AdminNavigation = [
-    {
-      name: 'Question',
-      href: '/admin/question',
-      iconActive: <IconMessageCircleQuestion size={28} color='#FFFFFF'/>,
-      iconInActive: <IconMessageCircleQuestion size={28} color='#767B82'/>,
-    },
-    // {
-    //   name: 'Add Campaign',
-    //   href: '/admin/add-campaign',
-    //   iconActive: <Ic_campaign  stroke='#FFFFFF'/>,
-    //   iconInActive: <Ic_campaign  stroke='#767B82'/>,
-    // },
-];
+export const NavigationAdmin = [
+  {
+      name: 'Experience',
+      href: '/admin/experience',
+  },
+  {
+      name: 'Projects',
+      href: '/admin/projects',
+  },
+  {
+      name: 'Me',
+      href: '/admin/me',
+  },
+  {
+      name: 'My tools',
+      href: '/admin/tools',
+  },
+  {
+      name: 'Blog',
+      href: '/admin/blog',
+  },
+]
